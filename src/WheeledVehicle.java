@@ -15,6 +15,7 @@ public abstract class WheeledVehicle extends Vehicle implements Serviced {
         System.out.println("Меняем покрышку");
     }
 
+    @Override
     public void service() {
         for (int i = 0; i < wheelsCount; i++) {
             updateTyre();
